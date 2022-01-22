@@ -1,7 +1,7 @@
 #!/bin/bash
 if [[ -z "$(command -v docker)" ]];then
     echo "需要先安装Docker,可以使用下列脚本安装
-    bash <(curl -sL haoduck.com/sh/docker.sh)"
+    bash <(curl -sL https://raw.githubusercontent.com/yangliuchang/docker/main/docker.sh)"
 else
     read -p "创建浏览器访问密码: " password
     read -p "运行的端口(默认5800): " port
